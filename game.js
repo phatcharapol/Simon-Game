@@ -13,12 +13,11 @@ $(document).keypress(function (e) {
 });
 
 // For Mobile or Ipad
-$(".btn-start").click(function () {
-    // Press SpaceBar And Level 1 will be start ;
-    if(level === 0)
-        nextSequence();
+$(document).click(function () {
 
-        $(".btn-start").hide();
+    if (level === 0) {
+        nextSequence();
+    }
 });
 
 // User Choose Color
@@ -86,6 +85,4 @@ function gameOver() {
     userCntClick = 0;
     gamePattern = [];
 
-    // For Mobile or Ipad
-    $(".btn-start").html("Restart").show();
 }
