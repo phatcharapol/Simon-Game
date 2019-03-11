@@ -12,6 +12,15 @@ $(document).keypress(function (e) {
     }
 });
 
+// For Mobile or Ipad
+$(".btn-start").click(function () {
+    // Press SpaceBar And Level 1 will be start ;
+    if(level === 0)
+        nextSequence();
+
+        $(".btn-start").hide();
+});
+
 // User Choose Color
 $('.btn').click(function () {
     var userChoosenColor = this.id;
@@ -76,4 +85,7 @@ function gameOver() {
     level = 0;
     userCntClick = 0;
     gamePattern = [];
+
+    // For Mobile or Ipad
+    $(".btn-start").html("Restart").show();
 }

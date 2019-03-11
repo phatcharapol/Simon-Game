@@ -51,3 +51,19 @@ body {
   box-shadow: 0 0 20px white;
   background-color: grey;
 }
+
+/* For Mobile or IPad*/
+.btn-start {
+  font-size: 4rem ;
+  margin: 25px;
+  display: inline-block;
+  border: 10px solid black;
+  border-radius: 20%;
+  visibility: hidden;
+}
+@media (max-width:1024px){
+  .btn-start {
+    visibility: visible;
+  }
+  
+}
