@@ -12,13 +12,6 @@ $(document).keypress(function (e) {
     }
 });
 
-// For Mobile or Ipad
-$(document).click(function () {
-
-    if (level === 0) {
-        nextSequence();
-    }
-});
 
 // User Choose Color
 $('.btn').click(function () {
